@@ -1,0 +1,10 @@
+# kind 로컬 Kubernetes 클러스터 설정
+# control-plane 1대 + worker 1대 구성
+# 학습 목적: 실제 운영 멀티노드 느낌을 가볍게 확인
+
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: k8s-study
+nodes:
+  - role: control-plane
+  - role: worker
