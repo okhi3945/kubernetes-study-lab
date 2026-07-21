@@ -29,6 +29,17 @@ Kubernetes 기본 개념을 공식문서 기준으로 실습하며 정리하는 
 └─ README.md
 ```
 
+## 실습 진행 현황
+
+- [x] Docker Desktop 설치/검증
+- [x] kubectl/kind 설치/검증
+- [x] kind 클러스터 `k8s-study` 생성
+- [x] nginx Pod `nginx-basic` 배포
+- [x] `kubectl port-forward`로 HTTP 200 OK 확인
+- [ ] Deployment/ReplicaSet 실습
+- [ ] Service 실습
+- [ ] 장애 상태 재현: ImagePullBackOff, CrashLoopBackOff
+
 ## 빠른 시작
 
 ### 1. 로컬 클러스터 생성
