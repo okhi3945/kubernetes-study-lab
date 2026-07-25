@@ -37,8 +37,18 @@ Kubernetes 기본 개념을 공식문서 기준으로 실습하며 정리하는 
 - [x] nginx Pod `nginx-basic` 배포
 - [x] `kubectl port-forward`로 HTTP 200 OK 확인
 - [ ] Deployment/ReplicaSet 실습
+  - 자료: `notes/02-deployment-replicaset-pod-lab-guide.md`
+  - YAML: `manifests/deployment/`
 - [ ] Service 실습
 - [ ] 장애 상태 재현: ImagePullBackOff, CrashLoopBackOff
+
+## 학습 로드맵
+
+전체 학습 단계와 최종 미니 프로젝트 목표는 아래 문서에 정리했습니다.
+
+```text
+notes/00-kubernetes-study-roadmap.md
+```
 
 ## 빠른 시작
 
