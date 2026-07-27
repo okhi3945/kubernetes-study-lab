@@ -36,10 +36,12 @@ Kubernetes 기본 개념을 공식문서 기준으로 실습하며 정리하는 
 - [x] kind 클러스터 `k8s-study` 생성
 - [x] nginx Pod `nginx-basic` 배포
 - [x] `kubectl port-forward`로 HTTP 200 OK 확인
-- [ ] Deployment/ReplicaSet 실습
+- [x] Deployment/ReplicaSet 실습
   - 자료: `notes/02-deployment-replicaset-pod-lab-guide.md`
   - YAML: `manifests/deployment/`
 - [ ] Service 실습
+  - 자료: `notes/03-service-endpointslice-lab-guide.md`
+  - YAML: `manifests/service/`
 - [ ] 장애 상태 재현: ImagePullBackOff, CrashLoopBackOff
 
 ## 학습 로드맵
