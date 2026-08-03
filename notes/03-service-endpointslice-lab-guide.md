@@ -24,6 +24,11 @@ Pod 3: app=nginx-deploy
 - Service는 변하지 않는 고정 접근 지점입니다.
 - Service는 selector로 대상 Pod를 찾습니다.
 - EndpointSlice는 Service가 실제로 연결할 Pod IP 목록입니다.
+- EndpointSlice는 Service 생성 시 Kubernetes가 자동으로 만들고, Service/Pod 상태를 보고 자동 갱신합니다.
+- ClusterIP는 클러스터 내부 통신용 IP이므로 외부에서 직접 접근하지 못합니다.
+- Service IP/DNS로 접근하면 EndpointSlice에 있는 Pod IP들로 연결되고, 최종적으로 실제 Pod에 도달합니다.
+- Pod를 삭제하고 새 Pod가 생성되면 새 Pod IP가 발급되고 EndpointSlice도 자동 갱신됩니다.
+- 이때 Service 이름과 Service IP는 그대로 유지됩니다.
 - selector와 Pod label이 맞지 않으면 Service는 생성돼도 트래픽을 보낼 대상이 없습니다.
 
 ## 0. Deployment 상태 확인

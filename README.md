@@ -39,9 +39,12 @@ Kubernetes 기본 개념을 공식문서 기준으로 실습하며 정리하는 
 - [x] Deployment/ReplicaSet 실습
   - 자료: `notes/02-deployment-replicaset-pod-lab-guide.md`
   - YAML: `manifests/deployment/`
-- [ ] Service 실습
+- [x] Service 실습
   - 자료: `notes/03-service-endpointslice-lab-guide.md`
   - YAML: `manifests/service/`
+- [ ] Ingress 실습
+  - 자료: `notes/04-ingress-lab-guide.md`
+  - YAML: `manifests/ingress/`
 - [ ] 장애 상태 재현: ImagePullBackOff, CrashLoopBackOff
 
 ## 학습 로드맵
